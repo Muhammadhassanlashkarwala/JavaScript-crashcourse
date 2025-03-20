@@ -60,19 +60,100 @@
 
 
 // Let's practice time:
-// 1) Write a javascript program that defines a function called greetto welcome individuals to the Coding zone Js Course. The function should take a name parameter and output the message "Hello [name], welcome to Coding zone JS Course". Call the function teice, once with the argument "Hassan" and once with the argument "Raza".
+// 1) Write a javascript program that defines a function called greet to welcome individuals to the Coding zone Js Course. The function should take a name parameter and output the message "Hello [name], welcome to Coding zone JS Course". Call the function twice, once with the argument "Hassan" and once with the argument "Raza".
 
+// function greet(name) {
+//     console.log("Hello " + name, "welcome to Coding zone JS Course");
+// }
+// greet("Hassan");
+// greet("Raza");
+// greet("Ali");
 
 
 
 // 2) Write a function to find the product of two numbers with parameters.
 
-
+// function product(a, b) {
+//     console.log(a * b);
+// }
+// product(6, 7);
 
 
 
 // So now the turn of Function expression:
 // A function expression is a way to define a function as part of an expression. It can be either named or anonymous. If it's named, it becomes a named function expression.
+
+
+// var myName = function product(a, b) {
+//     console.log(a * b);
+// };
+// myName(10, 20);
+
+
+
+
+// So now the turn of Anonymous Function:
+// An anonymous function is a function without a name, It can be created using either a function expression or a function declaration without a specidfied name.
+
+
+// function res(a, b) {
+//     console.log(a + b);
+// };
+
+// res(10, 15);
+
+
+
+
+// Now so finally is Return Keyword!!
+// Return Keyword: In Javascript, the return statement is used with in a function to specify the value that the function should produce or provide back to the code that called it. The return statement stop the execution of a function and sends a value back to the caller.
+
+// Syntax
+// return expression;
+
+
+// function sum(a, b) {
+//     return a + b;
+// };
+
+// var result = sum(5, 15);
+// console.log(result);
+// console.log(sum(5, 15));
+// console.log(sum(25, 15));
+// console.log(sum(60, 180));
+
+
+
+// IIFE : Immediately Invocked Function Expression !!!
+
+// An IIFE, Immediately Invocked Function Expression is a javascript function that is defined and executed immediately after its creation. It is a way to create a self-contained block of code that doesn't interface with the surrounding code and executes immediately.
+
+// Syntax
+
+// (function () {
+//     // code to be executed
+// })();
+
+// Practice Time!
+// (IIFE with parameters)
+
+
+// Interview Questions
+
+// Q.1) Calculator Function:
+// Write a javascript function calculator that takes two numbers and an operator as parameters and returns the result of the operation. The function should support addition, subtraction multiplication and division.
+
+
+// Q.2) Reverse a string:
+// Write a function to reverse a given string without using built-in reverse methods
+
+// Q.3) Palindrome Check:
+//  Create a function to determine if a given string is a palindrome (reads the same backward as forward)
+
+
+
+
+
 
 
 
