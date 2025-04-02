@@ -123,9 +123,7 @@
 // console.log(sum(60, 180));
 
 
-
 // IIFE : Immediately Invocked Function Expression !!!
-
 // An IIFE, Immediately Invocked Function Expression is a javascript function that is defined and executed immediately after its creation. It is a way to create a self-contained block of code that doesn't interface with the surrounding code and executes immediately.
 
 // Syntax
@@ -134,9 +132,21 @@
 //     // code to be executed
 // })();
 
+// (function () {
+// console.log("I'm a IIFE function");
+// })();
+
+
 // Practice Time!
 // (IIFE with parameters)
 
+//  var funExp = (function (a, b){
+// console.log("Now the answer is ", a + b);
+// return a + b;
+// }(10, 20));
+
+// var res = funExp;
+// console.log("Thirty aii ga kyu ke humne return ka keyword use kiya h!!!", res);
 
 // Interview Questions
 
