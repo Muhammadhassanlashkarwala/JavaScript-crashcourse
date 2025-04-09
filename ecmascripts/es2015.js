@@ -71,7 +71,6 @@
 // }
 // console.log(myName);
 
-
 // Const Keyword:
 // The const keyword is used to declare variables with block scope but once a value is assigned to a const variable. Const variables are immutable and it cannot be reassigned.
 
@@ -79,8 +78,63 @@
 
 // pi = 3.142
  
+// TEMPLATE Strings (``)📑
+
+// In ECMAScript 6 (ES6), template strings, also known as template literals, provide a convenient and flexible way to create string in JavaScript. Template strings are enclosed in backticks (``) rather then single or double quotes. 
+
+// let firstName = "Hassan";    
+// let lastName = "Raza";
+
+// let fullName = firstName + lastName;
+// let fullName = `${firstName} ${lastName}`
+// console.log(fullName);
 
 
-// TEMPLATE String (``)📑
+// String Interpolation:
+// Template string support string interpolation, allowing you to embed expressions directly with in the string. Interpolated expressions are enclosed in ${}.
 
-// In ECMAScript 6 (ES6), template strings, also known as template literals, provide a convenient and flexible way to create string in JavaScript. Template strings are enclosed in backticks (``) rather then single or double quotes
+// let age = 28;
+
+// String interpolated
+// let message = `I am ${age} years old.`;
+// console.log(message);
+
+// Multi-line Strings:
+// Template Strings make it easy to create multi-line strings without the need for concatenation or escape characters.
+
+// let multiLinesString = `This is a multi-line
+// string using template literals. 
+// It's much cleaner and easier to read!`
+
+// console.log(multiLinesString);
+
+// Expression Evaluation:
+// Template expressions can include any valid Javascript expression.
+
+// Practice Time!
+// console.log("5 *" + num + " = " + 5 * num);
+// let num = 5;
+// console.log(`5 * ${num} = ${5 * num}`);
+
+// Advantages.  
+// Readability:
+// Template Strings make the code more readable, especially for complex string constructions.
+
+// Conciseness:
+// They eliminate the need for explicit string concatenation and reduce the use of escape characters.
+
+// Default Parameters ? 🤔
+
+// In ECMA Script 6 (ES6), default parameters were introduced, providing a more concise way to handle function parameter defaults.
+// Default parameters allow you to specify default values for function parameters in the function declaration itself. If a parameter is not provided when the function is called, the default value is used.    
+
+// Default function parameters allow named parameters to be initialized with default values if no value or undefined is passed.
+
+
+// Practice.
+// Write a function to find sum of two numbers what if during function call user only passed one argument!
+
+// function sum(a = 60, b = 40) {
+//     return a + b
+// }
+// console.log(sum(20, 35));
