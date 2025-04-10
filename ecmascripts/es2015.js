@@ -140,20 +140,38 @@
 // console.log(sum(20, 35));
 
 // Now the turn of Fat Aero Function !
-// In ECMA Script 6 (ES6), arrow functions, also known as fat arrow functions, were introduced as a concise way to write anonymous functions.
+// In ECMA Script 6 (ES6), arrow functions, also known as fat arrow functions, were  introduced as a concise way to write anonymous functions.
 
 // Simple function:
-
 // const sumTwo = function(a, b){
-// const message = `The sum of ${a} and ${b} is ${a + b}`;
+// let message = `The sum of ${a} and ${b} is ${a + b}`;
 // console.log(message);
 // }
 // sumTwo(5, 10)
 
-// Now syntax of Fat Aero Function !
+// const sumTwos = (a, b) => {
+//  let message = `The sum of ${a} and ${b} is ${a + b}`; 
+//  console.log(message);
+// }
+// sumTwos(40, 60)
 
-// const fatAero = (param1, param2, ...) => {
+
+// Now syntax of Fat Aero Function !
+// const fatAero = (param1, param2) => {
 // //  function body!
 //  return param1 + param2;  // optional!
 // }
-// fatAero(argu1, argu2, ...)
+// fatAero(argu1, argu2)
+ 
+
+// Benefit of fat aero function!
+// Your result is one line!
+// const sumTwo = function name(a,b) {
+//     let message =  `Hassan`
+//     console.log(message);
+// }
+// sumTwo(50, 10)
+// const sumTwos = (a, b) => console.log(`The sum of ${a} and ${b} is ${a + b}`); 
+// sumTwos(40, 60);
+
+
