@@ -41,4 +41,6 @@
 // 1) for-of loop, also known as iterable
 // for...of loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects
 
+// 2 )for-in loop
+// for...in loop: The for...in loop is used to iterate over the properties (including indices) of an object.
 
