@@ -2,7 +2,6 @@
 
 // LET AND CONST 📌
 
-
 // Let keyword:
 // The Let keyword is used to declare variables with block scope. Variables declared with let are mutable, meaning their values can be reassigned.
 
@@ -175,8 +174,6 @@
 // sumTwos(40, 60);
 
 
-
-
 //  Todo Notes !!
 
 // 1) If the function body consists of a single expression, the barces {} and the return keyword can be omitted.
@@ -184,11 +181,9 @@
 // console.log(sum(40, 60));
 
 // 2) If there is only one  parameter, the parenthesis () around the parameter list can be omitted.
-// const square = `The square of ${a} and ${b} is ${a * a}`;
+// const square = a => `The square of ${a} and ${a} is ${a * a}`;
 // console.log(square(5));
 
 // 3) If there are no parameters, use an empty set of parenthesis ().
 // const greet = () => console.log(`Please LIKE, SHARE, & SUBSCRIBE 📌✨`);
 // greet();
-
-
