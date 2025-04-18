@@ -47,3 +47,5 @@
 // 3) forEach Method
 //  The arr.forEach() method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.
 
+// 4) Map function
+// map() creates a new array from calling a function for every array element. map() does not change the original array.
