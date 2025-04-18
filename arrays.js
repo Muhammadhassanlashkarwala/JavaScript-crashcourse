@@ -44,3 +44,6 @@
 // 2 )for-in loop
 // for...in loop: The for...in loop is used to iterate over the properties (including indices) of an object.
 
+// 3) forEach Method
+//  The arr.forEach() method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.
+
