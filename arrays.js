@@ -13,12 +13,24 @@
 // Creating Arrays:
 // =============
 
+// let arr = [];
+// console.log(typeof arr);
+
 // Arrays in JavaScript can be created using the Array constructor or with array literals (square brackets []).
 // Using Array constructor
+
+// let fruits = new Array("apple", "banana", "grapes")
+// console.log(fruits);
+
 // Using Array literal
+
+// let fruit = [ 'apple', 'banana', 'grapes' ];
+// console.log(fruit);
 
 // We can also create an empty array!
 
+// let emptyArr = [];
+// console.log(emptyArr);
 
 // =====================
 // Accessing Elements:
@@ -26,12 +38,20 @@
 
 // Accessing Elements:  Array elements are accessed using zero-based indices.   
 
+// let fruit = [ 'apple', 'banana', 'grapes' ];
+// console.log(fruit[2]);
+// console.log(fruit('apple'));
 
 // =====================
-// MOdifying Elements:
+// Modifying Elements:
 // =================
 
 // Modifying Elements: You can modify array elements by assigning new values to specific indices
+
+// let fruit = [ 'apple', 'banana', 'grapes' ];
+
+// fruit[2] = "kuchbh";
+// console.log(fruit);
 
 
 // ==========================================
@@ -39,10 +59,24 @@
 // ======================================
 
 // 1) for-of loop, also known as iterable
-// for...of loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects
+// for...of loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.
+
+// let fruits = [ 'apple', 'banana', 'grapes', 'mango', 'pineapple' ];
+// for(let item of fruits){
+//     console.log(item);
+// }
+
+// for(let item=0; item < fruits.length; item++){
+//     console.log(fruits[item]);
+// }
 
 // 2 )for-in loop
 // for...in loop: The for...in loop is used to iterate over the properties (including indices) of an object.
+
+// let fruits = [ 'apple', 'banana', 'grapes', 'mango', 'pineapple' ];
+// for(let item in fruits){
+//     console.log(item);
+// }
 
 // 3) forEach Method
 //  The arr.forEach() method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.
