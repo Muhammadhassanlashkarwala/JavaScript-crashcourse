@@ -87,10 +87,8 @@
 // })
 // console.log(myForEachArr);
 
-
 // 4) Map() function
 // map() creates a new array from calling a function for every array element. map() does not change the original array.
-
 
 //  const myMapArr = fruits.map((currEle, index, arr) => {
 //        return `My fav fruit is: ${currEle}`;
