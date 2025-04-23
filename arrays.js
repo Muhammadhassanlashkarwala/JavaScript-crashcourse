@@ -53,7 +53,6 @@
 // fruit[2] = "kuchbh";
 // console.log(fruit);
 
-
 // ==========================================
 // Array Traversal / Iterating Over Arrays:
 // ======================================
@@ -73,13 +72,36 @@
 // 2 )for-in loop
 // for...in loop: The for...in loop is used to iterate over the properties (including indices) of an object.
 
-// let fruits = [ 'apple', 'banana', 'grapes', 'mango', 'pineapple' ];
+// let fruits = [ 'apple', 'banana', 'grapes', 'mango'  ];
 // for(let item in fruits){
 //     console.log(item);
 // }
 
-// 3) forEach Method
+// 3) forEach() Method
 //  The arr.forEach() method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.
 
-// 4) Map function
+// const myForEachArr = fruits.forEach((currEle, index, arr) => {
+//     // console.log(`${currEle} ${index}`);
+//     return `${currEle} ${index}`;
+//     // console.log(arr);
+// })
+// console.log(myForEachArr);
+
+
+// 4) Map() function
 // map() creates a new array from calling a function for every array element. map() does not change the original array.
+
+
+//  const myMapArr = fruits.map((currEle, index, arr) => {
+//        return `My fav fruit is: ${currEle}`;
+//     })
+// console.log(myMapArr);
+// console.log(fruits);
+
+
+
+
+
+
+
+
