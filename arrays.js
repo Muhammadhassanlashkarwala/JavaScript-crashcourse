@@ -97,9 +97,88 @@
 // console.log(fruits);
 
 
+// ==================================================================
+//  How to Insert, Add, Replace & Delete Elements in Array (CRUD) p-1 📌
+// =============================================================
+
+// 👉 How to Insert, Add, Replace & Delete Elements in Array(CRUD)
+// let fruits = ["apple", "mango", "banana", "grapes"];
+// console.log(fruits);
+// 1: push(): Method that adds one or more elements to the end of an array.
+
+// The push() method returns the new length.
+// console.log(fruits.push("mango"));
+// console.log("using of push method ===>" , fruits);
+
+// 2: pop(): Method that removes the last element from an array.
+// The pop() method returns the deleted word !
+// let fruits = ["apple", "mango", "banana", "grapes"];
+// console.log(fruits);
+// console.log(fruits.pop());
+// console.log("using of pop method ===> " , fruits);
+
+// 3: unshift(): Method that adds one or more elements to the beginning(first) of an array.
+// The unshift() method also returns the new length.
+
+// let fruits = ["apple", "mango", "banana", "grapes"];
+// console.log(fruits);
+// console.log(fruits.unshift("guava"));
+// console.log("unshift method ===>" ,fruits);
+
+// 4: shift(): Method that removes the first element from an array. 
+// The shift() method also returns the deleted word !
+
+// let fruits = ["apple", "mango", "banana", "grapes"];
+// console.log(fruits);
+// console.log(fruits.shift());
+// console.log("using shift method", fruits);
+
+// ==================================================================
+//  What if we want to add or remove anywhere in an elements p-2 📌
+// =============================================================
+
+//  The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+
+// 👉 syntax 
+
+// splice(start, deleteCount, item1, item2, /* ...,  */ itemN)
+
+// let fruits = ["apple", "orange", "banana", "mango"];
+
+// fruits.splice(1,2, "grapes", "guava");
+// console.log(fruits);
 
 
+// what if you want to add the element at the end
 
 
+// ============================
+// Searching in an Array
+// =====================
 
+//  Searching & Filter in an Array
+// For search we have - indexOf, lastIndexOf & includes
+// const things = ["salt", "sugar", "water", "milk", "sugar", "tea"];
+
+// ?1: IndexOf Method: The indexOf Method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+// syntax 
+// indexOf(SearchElement);
+// console.log(things.indexOf("water"));
+// console.log(things);
+// indexOf(SearchElement, fromIndex); 
+// console.log(things.indexOf("water", 3));
+
+// ?2: lastIndexOf Method: The lastIndexOf() method of Array instances returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
+// console.log(things.lastIndexOf("sugar"));
+
+
+// ?3: Includes Method: The includes method check whether an array includes a certain element, returning true or false.
+// syntax 
+// includes(SearchElement);
+// includes(SearchElement, fromIndex);
+
+// const things = ["salt", "water", "milk", "sugar", "tea"];
+
+// console.log(things);
+// console.log(things.includes("milk"));
 
