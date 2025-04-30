@@ -144,13 +144,10 @@
 // splice(start, deleteCount, item1, item2, /* ...,  */ itemN)
 
 // let fruits = ["apple", "orange", "banana", "mango"];
-
 // fruits.splice(1,2, "grapes", "guava");
 // console.log(fruits);
 
-
 // what if you want to add the element at the end
-
 
 // ============================
 // Searching in an Array
@@ -171,14 +168,42 @@
 // ?2: lastIndexOf Method: The lastIndexOf() method of Array instances returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
 // console.log(things.lastIndexOf("sugar"));
 
-
 // ?3: Includes Method: The includes method check whether an array includes a certain element, returning true or false.
 // syntax 
 // includes(SearchElement);
 // includes(SearchElement, fromIndex);
 
 // const things = ["salt", "water", "milk", "sugar", "tea"];
-
 // console.log(things);
 // console.log(things.includes("milk"));
 
+// let months = ["Jan", "Feb", "march", "April", "May", "June"];
+// console.log(months);
+//  todo challenge time !! 🔥
+//? 1: Add dec at the end of an array?
+
+// months.push("Dec");
+// console.log(months);
+
+//? 2: What is the return value of splice method?
+// [] // Splice method return the empty array!!
+//? 3: Update march to March (update)?
+// months.splice(2,1, "March");
+// console.log(months);
+
+//? 4: Delete June from an array?
+// months.pop();
+// console.log(months);
+
+// ==========================
+// Filter in an Array 
+// =====================
+
+//  Search + Filter
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+//? 1: find() Method: The find method is used to  find the first element in an array that satisfies a provided testing function. It returns the first matching element or undefined if no element is found.
+
+//? 1: findIndex() Method: The findIndex() method of TypedArray instances returns the index of the first element in a typed array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
+
+//? 1: filter() Method: The filter method creates a new array with all elements pass the test implemented the provided function
