@@ -200,10 +200,60 @@
 // =====================
 
 //  Search + Filter
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const numbers = [1, 2, 3, 4, 5, 4, 6, 7, 8, 9];
 
-//? 1: find() Method: The find method is used to  find the first element in an array that satisfies a provided testing function. It returns the first matching element or undefined if no element is found.
+//? 1: find() Method: The find method is used to find the first element in an array that satisfies a provided testing function. It returns the first matching element or undefined if no element is found.
 
-//? 1: findIndex() Method: The findIndex() method of TypedArray instances returns the index of the first element in a typed array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
+// const result = numbers.find((currEle)=>{
+//     return currEle > 9;
+// })
+// console.log(result);
 
-//? 1: filter() Method: The filter method creates a new array with all elements pass the test implemented the provided function
+//? 2: findIndex() Method: The findIndex() method of TypedArray instances returns the index of the first element in a typed array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
+
+// const result = numbers.map((currEle)=> currEle * 5)
+// console.log(result);
+
+// const result2 = result.findIndex((currEle)=>{
+//     return currEle > 20;
+// })
+// console.log(result2);
+
+//? 3: filter() Method: The filter method creates a new array with all elements pass the test implemented the provided function.
+
+// 👉 syntax 
+//? filter(callbackFn);
+//? filter(callbackFn, thisArg)
+
+// const numbers = [1, 2, 3, 4, 5, 4, 6, 7, 8, 9];
+
+// const result = numbers.filter((currEle)=>{
+//     return currEle > 5;
+// })
+// console.log(result);
+
+// UseCase: In E-commerce website when we want to  Delete or Remove any products from addToCart page.
+
+// //! Ex: Let's say user wants to delete value 7.
+// let value = 7;
+// const number = [1, 2, 3, 7, 4, 5, 6, 7, 8, 9];
+// const result = number.filter((currEle)=>{
+//         return currEle !== value;
+//     })
+//     console.log(result);
+
+// Practice Time ! 📌
+//! Ex: 2 Filtering products by price !
+// Filter products with a price less than or equal to 500 !!
+
+// const products = [
+//     { name: "Phone", price: 800 },
+//     { name: "laptop", price: 1000 },
+//     { name: "Tablet", price: 400 },
+//     { name: "Smartwatch", price: 200 }
+// ];
+
+// const result = products.filter((currEle)=>{
+//      return currEle.price <= 500
+// });
+// console.log(result);
