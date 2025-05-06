@@ -308,8 +308,7 @@
 // });
 // console.log(sortedNumbers);
 
-
-// =================================
+// ================================
 // Very Important Array Methods 
 // ==========================
 
@@ -317,7 +316,6 @@
 // Map() creates a new array from calling a function for every array element.
 // Map() does not execute the function for empty elements
 // Map() does not change the original array
-
 // Original array of numbers
 
 // Using map to square each number and create a new array
@@ -335,7 +333,6 @@
 //! 2: Using the map method, write a function that takes an array of numbers and returns a new array where each number is squared, but only if it's an even number.
 
 // const numbers = [1, 2, 3, 4, 5];
-
 // const result = numbers.map((currEle)=>{
 //  if(currEle % 2 === 0){
 //   return currEle * currEle
@@ -343,9 +340,17 @@
 // }).filter((currEle)=> currEle !== undefined)
 // console.log(result);
 
-
 //! 3: Using the map method, write a function that takes an array of names and returns a new array where each name is prefixed with "Mr. ".
 // const prefixedNames = ["Owais", "Ahmed", "Haroon"];
 
 // const names = prefixedNames.map((currEle)=> `Mr . ${currEle}`)
 // console.log(names);
+
+// =================
+// Reduce Method
+// ==========
+
+// The reduce method in Javascript is used to accumulate or reduce an arrya to a single value. It iterates over the elements of an array and applies a callback function to each element, updating an accumulator value with the result. teh reduce method takes a callback function as its first argument an optional  initial value for the accumulator as the second argument.
+
+// syntax
+// array.reduce(function callback(accumulator, currentValue, index, array))  ;
