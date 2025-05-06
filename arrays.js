@@ -257,3 +257,95 @@
 //      return currEle.price <= 500
 // });
 // console.log(result);
+
+// ==================================
+// How to Sort & Compare an Array 
+// ===========================
+
+//? How to Sort and Compare an Array.
+//? Sorting an Array: The sort method sorts the elements of an array in place and returns the sorted array. By default, it sorts elements as strings.
+
+// const fruits = ["Banana", "Apple", "Orange", "Mango"];
+// const numbers = [1,2,5,8,3,4,5,6,7,8,9];
+// numbers.sort();
+// console.log(numbers);
+// 1 > 2
+// 2>5
+// 5>8
+// 8 > 3 return 1
+
+// numbers.sort((a,b)=>{
+//     if(a>b) return -1;
+//     if(a<b) return 1;
+// });
+// console.log(numbers);
+
+
+//? Compare callback function
+// syntax
+//  const sortedNumbers = numbers.sort((a,b)=> a-b);
+// if(a>b) return 1 => switch the order
+// if(b>a) return -1 => keep the order
+
+// const numbers = [1,2,5,8,3,4,5,6,7,8,9];
+//? For ascending order
+// const sortedNumbers = numbers.sort((a,b)=>{
+//     if(a>b){
+//         return 1;
+//     }else if(b>a){
+//         return -1;
+//     }
+// });
+// console.log(sortedNumbers);
+
+//? For descending order
+// const sortedNumbers = numbers.sort((a,b)=>{
+//     if(a>b){
+//         return -1;
+//     }else if(b>a){
+//         return 1;
+//     }
+// });
+// console.log(sortedNumbers);
+
+
+// =================================
+// Very Important Array Methods 
+// ==========================
+
+// Map(), Filter(), Reduce(),
+// Map() creates a new array from calling a function for every array element.
+// Map() does not execute the function for empty elements
+// Map() does not change the original array
+
+// Original array of numbers
+
+// Using map to square each number and create a new array
+// const numbers = [1, 2, 3, 4, 5];
+// const result = numbers.map((currEle)=> currEle * currEle);
+// console.log(result);
+
+//! 1: Using the map method, write a function that takes an array of strings and returns a new array where each string is capitalized.
+// const fruits = ["BANANA", "apple", "orange", "mango"];
+// const capitalizedFruits = fruits.map((currEle)=>{
+//    return currEle.toLowerCase();
+// })
+// console.log(capitalizedFruits);
+
+//! 2: Using the map method, write a function that takes an array of numbers and returns a new array where each number is squared, but only if it's an even number.
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// const result = numbers.map((currEle)=>{
+//  if(currEle % 2 === 0){
+//   return currEle * currEle
+//  }
+// }).filter((currEle)=> currEle !== undefined)
+// console.log(result);
+
+
+//! 3: Using the map method, write a function that takes an array of names and returns a new array where each name is prefixed with "Mr. ".
+// const prefixedNames = ["Owais", "Ahmed", "Haroon"];
+
+// const names = prefixedNames.map((currEle)=> `Mr . ${currEle}`)
+// console.log(names);
