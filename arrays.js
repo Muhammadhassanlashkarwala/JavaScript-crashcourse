@@ -353,4 +353,26 @@
 // The reduce method in Javascript is used to accumulate or reduce an arrya to a single value. It iterates over the elements of an array and applies a callback function to each element, updating an accumulator value with the result. teh reduce method takes a callback function as its first argument an optional  initial value for the accumulator as the second argument.
 
 // syntax
-// array.reduce(function callback(accumulator, currentValue, index, array))  ;
+// array.reduce(function callback(accumulator, currentValue, index, array){
+// //  Your logic here
+// //  Return the updated accumulator value.
+// }, initialValue);
+
+//  callback: A functions that is called once for each element in the array.
+//  accumulator: The accumulated result of the previous iterations.
+//  currentValue: The current element being processed in the array.
+//  index (optional): The index of the current element being processed
+//  array (optional): The array reduce was called upon.
+// initialValue (optinal): An initial value for the accumulator. If not provided, the first element of the array is used as the initial accumulation value
+
+
+// Challenging Question (Using Reduce-method)!! 😉
+
+// Q.1) Write a JavaScript function that calculates the total price of items in a shopping cart. The function should take an array of item prices as input and return the total price.
+
+// const productsPrice = [1000, 2000, 3000, 5000, 10000];
+
+// const totalPrice = productsPrice.reduce((accumu,currEle)=>{
+//     return accumu + currEle
+// },0);
+// console.log(totalPrice);
