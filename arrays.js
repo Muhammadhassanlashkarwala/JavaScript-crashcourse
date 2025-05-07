@@ -280,7 +280,6 @@
 // });
 // console.log(numbers);
 
-
 //? Compare callback function
 // syntax
 //  const sortedNumbers = numbers.sort((a,b)=> a-b);
@@ -341,8 +340,8 @@
 // console.log(result);
 
 //! 3: Using the map method, write a function that takes an array of names and returns a new array where each name is prefixed with "Mr. ".
-// const prefixedNames = ["Owais", "Ahmed", "Haroon"];
 
+// const prefixedNames = ["Owais", "Ahmed", "Haroon"];
 // const names = prefixedNames.map((currEle)=> `Mr . ${currEle}`)
 // console.log(names);
 
@@ -365,13 +364,10 @@
 //  array (optional): The array reduce was called upon.
 // initialValue (optinal): An initial value for the accumulator. If not provided, the first element of the array is used as the initial accumulation value
 
-
 // Challenging Question (Using Reduce-method)!! 😉
-
 // Q.1) Write a JavaScript function that calculates the total price of items in a shopping cart. The function should take an array of item prices as input and return the total price.
 
 // const productsPrice = [1000, 2000, 3000, 5000, 10000];
-
 // const totalPrice = productsPrice.reduce((accumu,currEle)=>{
 //     return accumu + currEle
 // },0);
