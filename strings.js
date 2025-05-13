@@ -57,7 +57,13 @@
 // lastIndexOf(searchString)
 // lastIndexOf(searchString, position)
 
-// let text = "Hello guyzz, Welcome to our Best JavaScript Course !";
+// let text = "Hello JavaScript, Welcome to our Best JavaScript Course !";
 // let index = text.lastIndexOf("JavaScript");
-// let index = text.lastIndexOf("JavaScript", 40);
+// let index = text.lastIndexOf("JavaScript", 30);
+// console.log(index);
 
+// c: The search() method: The search method searches a string for a string (or a regular expression) and returns the position of the match 
+// Returns the index number where the first match is found, Returns -1 if no match is found.
+// let text = "Hello JavaScript, Welcome to our Best JavaScript Course !";
+// let result =  text.search(/Javascript/i);
+// console.log(result);
