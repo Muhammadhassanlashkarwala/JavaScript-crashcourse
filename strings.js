@@ -41,10 +41,23 @@
 // indexOf(searchString)
 // indexOf(searchString, position)
 
-// let text = "Hassan Raza";  
+// let text = "Hassan Raza"; 
+// // console.log(text.indexOf("Raza"));
+
+// let arrFrom = Array.from(text)
+// // console.log(arrFrom);
+
+// let arrMap = arrFrom.map((currEle, index)=>{
+// return `${currEle} - ${index}`
+// });
+// console.log(arrMap);
 
 //b: The lastIndexOf(): The lastIndexOf() method returns the index of the last occurence of a specified text in a string:
 // syntax
 // lastIndexOf(searchString)
-// lastIndexOf(searchString, positionlastIndex
+// lastIndexOf(searchString, position)
+
+// let text = "Hello guyzz, Welcome to our Best JavaScript Course !";
+// let index = text.lastIndexOf("JavaScript");
+// let index = text.lastIndexOf("JavaScript", 40);
 
