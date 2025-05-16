@@ -67,3 +67,31 @@
 // let text = "Hello JavaScript, Welcome to our Best JavaScript Course !";
 // let result =  text.search(/Javascript/i);
 // console.log(result);
+
+//* 👉 Important Tips:
+//  The search() method cannot take a second start position argument
+//  The indexOf() method cannot take powerful search values (regular expressions).
+// They accept the same arguments (parameters), and return the same value.
+
+// The match() method: The match() method returns an array of the matched values or null if no match is found.
+// let text = "Hello JavaScript, Welcome to our Best JavaScript Course ! JavaScript";
+// let result = text.match(/Javascript/gi);
+// console.log(result);
+
+// The matchAll() method: The matchAll() method returns an iterators of all matches, providing detailed information about each match. Returns an empty iterator if no match is found.
+// let text = "Hello JavaScript, Welcome to our Best JavaScript Course !";
+// let result =  text.matchAll("JavaScript");
+// console.log(... result);
+
+// for (const item of result) {
+//     console.log(item[0]);
+// };
+
+// The includes() method: The includes() method returns true if the string contain the specified value, and false otherwise.
+// let text = "Hello JavaScript, Welcome to our Best JavaScript Course !";
+
+// let includeResult = text.includes("Java");
+// let includeResult = text.includes("JavaS");
+// console.log(includeResult);  
+
+// Notes: includes() is case sensitive, includes() is an ES6 feature.
