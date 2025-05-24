@@ -6,7 +6,7 @@
 
 // Note:
 // Strings created with single or double quotes (""), ('') both are same and the works also same.
-// There is no difference between the two! 
+// There is no difference between the two!
 
 //* String Properties
 // Length: Property that returns the length of the string (number of characters).
@@ -24,11 +24,11 @@
 
 // \'            '               Single quote
 // \"            "               Double quote
-// \\            '               Backslash    
+// \\            '               Backslash
 
-// let text = "My name is Hassan Raza & I am a Full Stack Developer!"; 
-// let text = "My name is 'Hassan Raza' & I am a \"Full Stack \" Developer!"; 
-// let text = 'My name is Hassan Raza \\ & I am a \'Full Stack\' Developer!'; 
+// let text = "My name is Hassan Raza & I am a Full Stack Developer!";
+// let text = "My name is 'Hassan Raza' & I am a \"Full Stack \" Developer!";
+// let text = 'My name is Hassan Raza \\ & I am a \'Full Stack\' Developer!';
 // console.log(text);
 
 // ========================
@@ -41,7 +41,7 @@
 // indexOf(searchString)
 // indexOf(searchString, position)
 
-// let text = "Hassan Raza"; 
+// let text = "Hassan Raza";
 // // console.log(text.indexOf("Raza"));
 
 // let arrFrom = Array.from(text)
@@ -62,7 +62,7 @@
 // let index = text.lastIndexOf("JavaScript", 30);
 // console.log(index);
 
-// c: The search() method: The search method searches a string for a string (or a regular expression) and returns the position of the match 
+// c: The search() method: The search method searches a string for a string (or a regular expression) and returns the position of the match
 // Returns the index number where the first match is found, Returns -1 if no match is found.
 // let text = "Hello JavaScript, Welcome to our Best JavaScript Course !";
 // let result =  text.search(/Javascript/i);
@@ -89,9 +89,25 @@
 
 // The includes() method: The includes() method returns true if the string contain the specified value, and false otherwise.
 // let text = "Hello JavaScript, Welcome to our Best JavaScript Course !";
-
 // let includeResult = text.includes("Java");
 // let includeResult = text.includes("JavaS");
-// console.log(includeResult);  
+// console.log(includeResult);
 
 // Notes: includes() is case sensitive, includes() is an ES6 feature.
+
+// The startsWith() method: The startsWith() method returns true if a string begins with a specified value, Otherwise it returns false:
+// let text = "Hello JavaScript, Welcome to our Best JavaScript Course";
+// let result = text.startsWith("Hellos");
+// let result = text.startsWith("Hello");
+// console.log(result);
+
+// Start position for the search can be specified.
+// let result = text.startsWith("Welcome", 20);
+// let result = text.startsWith("welcome", 17);
+// console.log(result);
+
+// The endsWith() method: The startsWith() method returns true if a string end with a specified value, Otherwise it returns false:
+// let text = "Hello JavaScript, Welcome to our Best JavaScript Course";
+// let result = text.endsWith("Welcome");
+// let result = text.endsWith("Course", 48);
+// console.log(result);
