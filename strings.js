@@ -111,3 +111,58 @@
 // let result = text.endsWith("Welcome");
 // let result = text.endsWith("Course", 48);
 // console.log(result);
+
+
+// ============================
+// EXTRACTING STRING PARTS:
+// ============================
+// a: The slice method(): The slice method() extracts a part of a string and  returns the extracted part in a new string.
+
+// syntax:
+// slice(start,end);
+
+// Todo JavaScript counts positions from zero.
+// First position is 0, Second position is 1.
+
+// Main point is:
+// slice() extracts up to but not including indexEnd.
+//          012345678910111213
+// let text = "Hello JavaScript";
+// let result = text.slice(6);
+// let result = text.slice(6,13);
+// console.log(result);
+
+// a: substring: Extracts a portion of the string based on starting and ending indices.
+// camelCase is used to seperate words, substring is not to be intended as Sub String but as Substring.
+
+// syntax
+// substring(indexStart);
+// substring(indexStart, indexEnd);
+
+// substring() is similar to slice(). the difference is that start and end values less than 0 are treated as 0 in substring().
+//          01234                                                   
+// let text = "Hello JavaScript, Welcome to our Best JavaScript Course";
+// let result = text.substring(-6);
+// let result = text.slice(-6);
+// console.log(result);
+
+// Simple Question HomeWork !!!
+// let text = "Hello JavaScript, Welcome to our Best JavaScript Course";
+// let result = text.substring(0);
+// let result = text.substring(5);
+// let result = text.substring(-8);
+// console.log(result);
+
+// similarities
+// In both  teh slice() and substring() methods, the end parameter indicatesthe ending index up to which the extraction occurs, but the character at the end index is excluded from the extracted substring.
+
+
+// Interview Questions
+// What is the output of the following code? 🤔
+// let text = "Hello JavaScript, Welcome to our Best JavaScript Course";
+// let result = text.slice(1); 
+// let result = text.replace("H", "Hassan");
+// let result = text.replace("JavaScript", "Hassan");
+// let result = text.replaceAll("JavaScript", "Hassan");
+// let result = text.substring(1);
+// console.log(result);
