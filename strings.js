@@ -166,3 +166,35 @@
 // let result = text.replaceAll("JavaScript", "Hassan");
 // let result = text.substring(1);
 // console.log(result);
+
+// ============================
+// EXTRACTING STRING CHARACTERS:
+// ============================
+// There are three methods for extracting string characters.
+
+// The charAt(position) Method
+// The charCodeAt(position) Method
+// The at(position) Method
+
+// charAt(): The charAt() method returns the character at a specified index (position) in a string.
+// let text = "Hello JavaScript, Welcome to our Best JavaScript Course";
+// let result = text.charAt(8);
+// let result = text.charAt(-5);
+// console.log(result);
+
+// charCodeAt(): The charCodeAt() method returns the code at a specified index in a string. The method returns a UTF-16 code (an integer between 0 to 65535).
+// let text = "Hello JavaScript, Welcome to our Best JavaScript Course";
+// let result = text.charCodeAt(7);
+// console.log(result);
+
+// todo ES2022 introduced the string method at().
+// The at() method returns the character at a specified index (position) in a string. The at() method returns the same as charAt().
+// let text = "Hello JavaScript, Welcome to our Best JavaScript Course";
+// let result = text.at(6);
+// let result = text.at(-6);
+// console.log(result);
+
+// Note & Benefits of at() method!
+// The at() method is a new addition of JavaScript.
+// It allows the use of negative indexes while charAt() do not.
+// Now you can use result.at(-2) instead of charAt(result.length-2).
