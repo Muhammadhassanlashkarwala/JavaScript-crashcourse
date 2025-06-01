@@ -198,3 +198,77 @@
 // The at() method is a new addition of JavaScript.
 // It allows the use of negative indexes while charAt() do not.
 // Now you can use result.at(-2) instead of charAt(result.length-2).
+
+
+// =========================
+// OTHER USEFUL METHODS:
+// =========================
+// toUpperCase and to LowerCase: converts the string to uppercase or lowercase.
+
+// const str = "Hassan";
+// console.log(str.toUpperCase());   // output: ?
+
+// const str2 = "HASSAN";
+// console.log(str2.toLowerCase());  // output: ?
+
+// trim: removes whitespace from both ends of the string.
+// const str = "     Hello, World     ";
+// console.log(str.length);
+
+// const str2 = str.trim();
+// console.log(str2);
+// console.log(str2.length);
+
+// split: Splits the string into an array of substrings based on a specified delimiter.
+// const str = "apple, orange, banana";
+// console.log(str.split(",").reverse().join());
+
+
+// =========================
+// Interview Questions !
+// =========================
+
+// Q:01) Write a JavaScript function that prints the letter "a" through "z" in the console. You should use a loop to iterate through the letter and print each one on a new line.
+
+// console.log("a".charCodeAt());
+// console.log("z".charCodeAt());
+
+
+// for(let char= 97; char <= 122; char++){
+//     console.log(String.fromCharCode(char));
+// }
+
+// Q:02) Write a function to count the number of vowels in a string?
+
+// const countVowels = (str) =>{
+//     const vowels = "aeiou";
+//     let count = 0;
+
+//     for(let char of str){
+//         console.log(char);
+//         // console.log(str.includes(char));
+//         if(vowels.includes(char)){
+//            count++;
+//         }
+//     };
+//     return count;
+// };
+
+// console.log(countVowels("Hello, a i o u World "));
+
+// Q:03) Write a function to check if all the vowels presents in a string or not?
+
+// const checkAllVowelsPresent = (str) =>{
+//     const vowels = "aeiou";
+
+//     for(let char of vowels){
+//         // console.log(char);
+//         // console.log(str.includes(char));
+//         if(!str.includes(char)){
+//             return false;
+//         }
+//     };
+//     return true;
+// }
+
+// console.log(checkAllVowelsPresent("my name is muhammad hassan !"));
