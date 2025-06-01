@@ -223,7 +223,6 @@
 // const str = "apple, orange, banana";
 // console.log(str.split(",").reverse().join());
 
-
 // =========================
 // Interview Questions !
 // =========================
@@ -232,8 +231,6 @@
 
 // console.log("a".charCodeAt());
 // console.log("z".charCodeAt());
-
-
 // for(let char= 97; char <= 122; char++){
 //     console.log(String.fromCharCode(char));
 // }
@@ -243,7 +240,6 @@
 // const countVowels = (str) =>{
 //     const vowels = "aeiou";
 //     let count = 0;
-
 //     for(let char of str){
 //         console.log(char);
 //         // console.log(str.includes(char));
@@ -253,14 +249,12 @@
 //     };
 //     return count;
 // };
-
 // console.log(countVowels("Hello, a i o u World "));
 
 // Q:03) Write a function to check if all the vowels presents in a string or not?
 
 // const checkAllVowelsPresent = (str) =>{
 //     const vowels = "aeiou";
-
 //     for(let char of vowels){
 //         // console.log(char);
 //         // console.log(str.includes(char));
@@ -270,5 +264,4 @@
 //     };
 //     return true;
 // }
-
 // console.log(checkAllVowelsPresent("my name is muhammad hassan !"));
