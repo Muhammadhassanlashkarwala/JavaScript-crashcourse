@@ -2,7 +2,6 @@
 // Math Object in JavaScript:
 // =================================
 
-
 //* Math: The Math namespace object contains static properties and methods for mathematical constants and functions.
 //* Math work with the number type. It doesn't work with BigInt.
 
@@ -51,7 +50,6 @@
 // floor always rounds down
 // ceil always rounds up
 
-
 // =================================
 // Exponential & Logarithmic Functions:
 // =================================
@@ -59,7 +57,6 @@
 // Math.pow(x,y): Returns the value of x to the power of y.
 // console.log(Math.pow(2, 5));    // 2 x 2 x 2 x 2 x 2 = 32
 // console.log(2 ** 5);
-
 
 // Math.sqrt(): Returns the square root of x.
 // let squareRoot = Math.sqrt(25);
