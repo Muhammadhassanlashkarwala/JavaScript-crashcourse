@@ -53,7 +53,6 @@
 // console.log(myName);
 
 // var
-
 // if(true){
 //     var myName = "Raza";  
 //     console.log(myName); 
@@ -63,7 +62,6 @@
 
 
 // let :
-
 // if(true){
 //     const myName = "Let";  
 //     console.log(myName); 
@@ -129,7 +127,6 @@
 
 // Default function parameters allow named parameters to be initialized with default values if no value or undefined is passed.
 
-
 // Practice.
 // Write a function to find sum of two numbers what if during function call user only passed one argument!
 
@@ -153,7 +150,6 @@
 //  console.log(message);
 // }
 // sumTwos(40, 60)
-
 
 // Now syntax of Fat Aero Function !
 // const fatAero = (param1, param2) => {
