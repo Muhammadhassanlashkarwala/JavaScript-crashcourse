@@ -49,3 +49,56 @@
 
 //? document Object
 // Represents the DOM of the currently displayed document.
+
+
+//* navigator Object:
+// The JavaScript navigator Object is used for browser detection. It can be used to get browser information such as appName, appCodeName, userAgent etc !
+
+//? navigator.userAgent (property):
+// Returns the user agent string of the browser.
+// Example: console.log(navigator.userAgent).
+
+
+//? navigator.language (property):
+// Returns the language preference of the user's browser.
+// Example: console.log(navigator.language).
+
+
+//? navigator.cookieEnabled (property):
+// indicates whether cookies are enabled in the browser.
+// Example: console.log(navigator.cookieEnabled).
+
+//? navigator.platform (property):
+// Returns the platform on which the browser is running
+// Example: console.log(navigator.platform).
+
+//? navigator.online (property):
+// Indicates whether the browser is online
+// Example: console.log(navigator.online).
+
+
+// * History Object:
+
+// The JavsScript history object represents an array of URLs visited by the user. By using this object, you can load previous, forward or any particular page.
+
+//* Location Object:
+
+// window.location.href (property):
+// Returns the URL of the current page.
+// Example: console.log(window.location.href).
+
+// window.location.hostname (property):
+// Returns the domain name of the web host.
+// Example: console.log(window.location.hostname).
+
+// window.location.assign(url) (Method):
+// Navigates to the specified URL
+// Example: window.location.assign("https://www.example.com")   
+
+// window.location.reload(forceReload) (Method):
+// Reloads the current page.
+// Example: window.location.reload(true)
+
+// window.location.search (property):
+// Returns the query string part of the URL.
+// Example: console.log(window.location.search)
