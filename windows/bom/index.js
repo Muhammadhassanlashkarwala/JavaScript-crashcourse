@@ -102,3 +102,25 @@
 // window.location.search (property):
 // Returns the query string part of the URL.
 // Example: console.log(window.location.search)
+
+// * screen Object:
+
+//? window.screen.width and window.screen.height (properties):
+//  Represent the width and height of the user's screen.
+// Example: console.log(window.screen.width)
+
+//? window.screen.availwidth and window.screen.availheight (properties):
+//  Represent the available width and height of the user's screen (excluding taskbars).
+// Example: console.log(window.screen.availwidth)
+
+//? window.screen.colorDepth (property):
+// Returns the number of bits used to represent the color of each pixel.
+// Example: console.log(window.screen.colorDepth)
+
+//? window.screen.orientation (property):
+// Returns the current orientation of the user's screen.
+// Example: console.log(window.screen.orientation)
+
+//? window.screen.pixelDepth (property):
+// Returns the number of bits used to represent eaxh pixel
+// Example: console.log(window.screen.pixelDepth).
