@@ -1,0 +1,15 @@
+body{
+    font-family: sans-serif;
+    margin: 2rem;
+    color: white;
+    background: #000;
+}
+button{
+    height: 40px;
+    width: 260px;
+    font-size: 18px;
+    margin: 10px;
+    background: yellow;
+    color: black;
+    border-radius: 30px;
+}
