@@ -11,7 +11,7 @@
 //* String Properties
 // Length: Property that returns the length of the string (number of characters).
 
-// const str = "Hello, World   !";
+// const str = "Hello, World!";
 // console.log(str.length);
 // Length keyword consider all words & space also!
 

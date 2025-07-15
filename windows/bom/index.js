@@ -33,7 +33,7 @@
 // Example: navigator, userAgent, navigator.language
 
 //? location Object:
-// Represents the  current URL of the browser
+// Represents the current URL of the browser
 // Example: window.location.href, window.location.hostname
 
 //? history Object:
@@ -93,7 +93,7 @@
 
 // window.location.assign(url) (Method):
 // Navigates to the specified URL
-// Example: window.location.assign("https://www.example.com")   
+// Example: window.location.assign("https://www.example.com")
 
 // window.location.reload(forceReload) (Method):
 // Reloads the current page.
