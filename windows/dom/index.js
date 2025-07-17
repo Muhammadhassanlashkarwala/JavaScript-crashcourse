@@ -6,6 +6,57 @@
 
 //?  This entire DOM tree is then accessible to JavaScript as an object, JavaScript can interact with this object to manipulate the content, structure, and style of the document dynamically. The DOM essentially serves an an interface between the HTML document and JavaScript, providing a way for scripts to access and modify the document's structure and content.
 
+//? todo: The document object model (DOM) is an application programming Interface (API). The DOM tree is the structure of your HTML document, as represented by the DOM API. As stated, this API then gives us many methods and properties that we can use to manipulate the Tree, and therefore, by extension, the document.
+
+//? Here is a type of nodes in JS.
+
+//? Element node: An HTML tag, the tree building blocks.
+
+//? Text node: In the DOM tree, text content, including new lines, spaces and tabs, is treated as text nodes.
+
+//? Attribute node: An attribute of an element.
+
+//? Comment node: Represent comments with in the HTML document.
+
+//? Processing instruction node: A Processing instruction node, such as <? xml-stylesheet _ ?>.
+
+//? Document node: A document node.
+
+//? //? Document type node: A document type node, such as <! DOCTYPE html>.
+
+// ==========================
+//  DOM Properties & Methods:
+// ==========================
+
+//? DOM properties:
+// document.
+// getElementById(id).
+// getElementByClassName(className).
+// getElementByTagName(tagName).
+// querySelector(selector).
+// querySelectorAll(selector).
+// innerHTML.
+// textContent.
+// styles.
+
+//? DOM Methods:
+// createElement(tagName)
+// appendChild(node)
+// removeChild(node)
+// addEventListener(event, function)
+// removeEventListener(event, function)
+// setAttribute(name, value)
+// getAttribute(name)
+// parentNode / parentElement
+// childNodes / children
+// firstChild / firstElementChild
+// lastChild / lastElementChild
+// nextSibling / nextElementSibling
+// previousSibling / previousElementSibling
+// closest(selector)
+// forEach(Array, from)
+
+
 // ==========================
 //  DOM Navigation:
 // ==========================
