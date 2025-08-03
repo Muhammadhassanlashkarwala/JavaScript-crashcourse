@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Crud !</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="domCrud">
+        <h1>Simple DOM Todo App</h1>
+        <input type="text" id="inputField">
+        <button class="btn">Click me</button>
+        <div class="todoListsElem">
+
+        </div>
+    </div>
+    <script>
+        let inputElem = document.getElementById("inputField");
+        let clickBtn = document.querySelector(".btn");
+        let todoElem = document.querySelector(".todoListsElem")
+        // let todoFirst = document.getElementById("todoFirst")
+        const addTodo = () => {
+            console.log(inputElem.value);
+            // todoFirst.textContent = inputElem.value;
+            let elemP = document.createElement("p");
+            elemP.textContent = inputElem.value;
+            console.log(elemP);
+            todoElem.append(elemP)
+            inputElem.value = " ";
+        }
+
+        clickBtn.addEventListener("click", () => {
+            addTodo()
+        });
+
+    </script>
+</body>
+
+</html>
