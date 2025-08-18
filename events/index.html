@@ -15,16 +15,44 @@
 <body>
     <!-- Start Inline Event -->
     <h1>Inline Event</h1>
-    <button>Greeting</button>
-    <button>Greeting again !</button>
-
+    <button onclick="alert('Welcome !')">Greeting</button>
+    <button ondblclick="alert('Welcome Friends')">Greeting again !</button>
+    <button onmouseover="alert('Welcome Guyz JS Course')">Greeting Hover !</button>
     <!-- End Inline Event -->
 
     <!-- Start DOM Event Handler -->
-
+    <h1>DOM Event Handler</h1>
+    <button id="btn-1">Greeting</button>
+    <button id="btn-2">Greeting again !</button>
     <!-- End DOM Event Handler -->
 
+    <!-- Start addEventListener Event Handler -->
+    <h1>addEventListener Event Handler</h1>
+    <button id="btn-3">Greeting</button>
+    <button id="btn-4">Greeting again !</button>
+    <!-- End addEventListener Event Handler -->
 
+    <script>
+        document.getElementById("btn-1").onclick = () => {
+            alert('Welcome !');
+        };
+
+        document.getElementById("btn-2").onmouseenter = () => {
+            alert('Welcome To Mouse Enter Event !');
+        };
+
+        // addEventListener
+        let usesAddEvent = document.getElementById("btn-3");
+        let usesAddEvents = document.getElementById("btn-4");
+
+        usesAddEvent.addEventListener("click", () => {
+            alert('Welcome !');
+        });
+
+        usesAddEvents.addEventListener("mouseenter", () => {
+            alert('Welcome mouse enter!');
+        });
+    </script>
 </body>
 
 </html>
