@@ -88,6 +88,7 @@
         const handleMouseEvents2 = () => {
             console.log("dblclick");
             rectDiv.classList.add("addTransition");
+            rectDiv.style.backgroundColor = "#f5ee62";
         };
 
         const handleMouseEvents3 = () => {
@@ -110,12 +111,18 @@
         // todo ~ show them css animation part
 
         // Attach the handleClick function to the click event fo the button.
-        // myButton.addEventListener("click", handleMouseEvents)
+        // myButton.addEventListener("click", handleMouseEvents);
         // myButton.addEventListener("dblclick", handleMouseEvents2)
         // rectDiv.addEventListener("mouseover", handleMouseEvents3);
         // rectDiv.addEventListener("mouseout", handleMouseEvents4);
-        // rectDiv.addEventListener("mousedown", handleMouseEvents5);
-        rectDiv.addEventListener("mouseup", handleMouseEvents6);
+        rectDiv.addEventListener("mousedown", handleMouseEvents5);
+
+        // When you need auguments or parameters, So you used this: 
+        // rectDiv.addEventListener("mousedown", (e) => {
+        //     handleMouseEvents5(e.target)
+        // })
+
+        // rectDiv.addEventListener("mouseup", handleMouseEvents6);
 
 
     </script>
