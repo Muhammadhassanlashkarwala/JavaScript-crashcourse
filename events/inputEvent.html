@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Event</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin-top: 10rem;
+            background: #000;
+        }
+
+        input {
+            height: 40px;
+            padding-left: 10px;
+            align-items: center;
+            font-size: 20px;
+            width: 260px;
+            border-radius: 5px;
+        }
+
+        .output {
+            background: #272727;
+            padding: 5px 0px 5px 20px;
+            margin-top: 20px;
+            border-left: 3px solid white;
+            border-radius: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .inputType {
+            padding-top: 10px;
+        }
+
+        .inputName {
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .inputValue,
+        .inputName,
+        .inputType {
+            color: white;
+        }
+
+        .eventType {
+            color: #f5ee62;
+        }
+    </style>
+
+<body>
+    <section>
+        <input type="text" id="myInput" name="username" autocomplete="off" placeholder="Type something..." />
+
+        <div class="output">
+            <p class="inputValue">Input value:</p>
+            <p class="inputType">Input type:</p>
+            <p class="inputName">Input name:</p>
+            <p class="eventType">Event type:</p>
+        </div>
+    </section>
+  
+
+
+   
+
+
+    <script>
+
+
+
+        // let inputElem = document.getElementById("myInput");
+
+        // const handleInput = (event) => {
+        //     // console.log(event);
+        //     // console.log("inputValue: ", event.target.value);
+        //     // console.log("inputType: ", event.inputType);
+        //     // console.log("inputName: ", event.target.name);
+        //     // console.log("type: ", event.type);
+
+        //     let inputValue = document.querySelector(".inputValue").textContent = `Input value: ${event.target.value}`;
+        //     console.log(inputValue);
+
+        //     let inputType = document.querySelector(".inputType").textContent = `Input type: ${event.inputType}`;
+        //     console.log(inputType);
+
+        //      let inputName = document.querySelector(".inputName").textContent = `Input name: ${event.target.name}`;
+        //     console.log(inputName);
+
+        //      let eventType = document.querySelector(".eventType").textContent = `Event type: ${event.type}`;
+        //     console.log(eventType);
+        // }
+
+        // inputElem.addEventListener('change', handleInput);
+
+
+       
+
+
+    </script>
+</body>
+
+</html>

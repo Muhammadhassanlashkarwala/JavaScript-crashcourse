@@ -64,24 +64,35 @@
 
     <script>
 
-        const handleKeyPressed = (event) => {
+        const handlekeypressed = (event) => {
+// console.log(event);
+// console.log("keypressed :", event.key);
+// console.log("key code :", event.keyCode);
+// console.log("key charCode:", event.charCode);
+// console.log("event type :", event.type);
 
-            let keyPressed = document.querySelector(".keyPressed").textContent = `Key pressed: ${event.key}`
-            console.log(keyPressed);
+let keyPressed = document.querySelector('.keyPressed').textContent = `Key pressed: ${event.key}`
+console.log(keyPressed);
 
-            let keyCode = document.querySelector(".keyCode").textContent = `Key code: ${event.code}`
-            console.log(keyCode);
+let keyCode = document.querySelector('.keyCode').textContent = `Key pressed: ${event.keyCode}`
+console.log(keyCode);
 
-            let keyCharCode = document.querySelector(".charCode").textContent = `Char code: ${event.charCode}`
-            console.log(keyCharCode);
+let keyCharCode = document.querySelector('.charCode').textContent = `Key pressed: ${event.charCode}`
+console.log(keyCharCode);
 
-            let eventType = document.querySelector(".eventType").textContent = `Event type: ${event.type}`
-            console.log(eventType);
-        }
+let eventType = document.querySelector('.eventType').textContent = `Key pressed: ${event.type}`
+console.log(eventType);
+
+
+
+        };
+
         let myInput = document.getElementById("myInput");
 
-        myInput.addEventListener("keydown", handleKeyPressed)
+        myInput.addEventListener('keyup', handlekeypressed)
+
     </script>
+
 
 </body>
 
