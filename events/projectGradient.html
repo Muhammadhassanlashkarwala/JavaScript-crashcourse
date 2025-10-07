@@ -83,7 +83,6 @@
         border-radius: 5px;
         padding: 15px 8px 15px 17px;
         background-color: rgba(189, 189, 189, 0.1);
-        
     }
 </style>
 
@@ -101,47 +100,43 @@
     <script>
         let btnOne = document.getElementById("btn-1");
         let btnTwo = document.getElementById("btn-2");
-       
-    </script>
-</body>
-
-</html>
-
-
-
- <!-- let codeCopy = document.querySelector(".codeCopy");
+        let codeCopy = document.querySelector(".codeCopy");
         let rgb1 = "#000";
         let rgb2 = "#fff";
 
-        const finalValue = () => {
-            let hexValue = "0123456789abcdef";
+        const HexaValues = () => {
+            let hexaValues = "0123456789abcdef";
             let color = "#";
-            for (let i = 0; i < 6; i++) {
-                color = color + hexValue[Math.floor(Math.random() * 16)]
+            for (i = 0; i < 6; i++) {
+                color = color + hexaValues[Math.floor(Math.random() * 16)];
             };
             return color;
         }
 
         const handleClickButton = () => {
-            rgb1 = finalValue();
+            rgb1 = HexaValues();
             console.log(rgb1);
             document.body.style.backgroundImage = `linear-gradient(to right, ${rgb1}, ${rgb2})`;
-            codeCopy.innerHTML = `background-image: linear-gradient(to right, ${rgb1}, ${rgb2})`;
-            btnOne.innerHTML = `${rgb1}`
+            codeCopy.textContent = `background-image: linear-gradient(to right, ${rgb1},${rgb2})`;
+            btnOne.textContent = rgb1
         }
 
-
         const handleClickButton2 = () => {
-            rgb2 = finalValue();
+            rgb2 = HexaValues();
             console.log(rgb2);
-            document.body.style.backgroundImage = `linear-gradient(to right, ${rgb1}, ${rgb2})`;
-            codeCopy.innerHTML = `background-image: linear-gradient(to right, ${rgb1}, ${rgb2})`;
-            btnTwo.innerHTML = `${rgb2}`
+             document.body.style.backgroundImage = `linear-gradient(to right, ${rgb1}, ${rgb2})`;
+            codeCopy.textContent = `background-image: linear-gradient(to right, ${rgb1}, ${rgb2})`;
+            btnTwo.textContent = rgb2
+
         }
 
         btnOne.addEventListener("click", handleClickButton)
         btnTwo.addEventListener("click", handleClickButton2)
-        codeCopy.addEventListener("click", () => {
-            navigator.clipboard.writeText(codeCopy.innerText);
-            alert("Content coppied to Clipboard")
-        }) -->
+        codeCopy.addEventListener("click", ()=>{
+            window.navigator.clipboard.writeText(codeCopy.innerText);
+            alert("Copied your color to clipboard")
+        })
+    </script>
+</body>
+
+</html>
