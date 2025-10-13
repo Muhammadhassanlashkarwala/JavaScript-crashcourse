@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clearify LocalStorage</title>
+</head>
+
+<body>
+    <div>
+        <button id="addData">Add data to localStorage</button>
+        <button id="getData">Get data from localStorage</button>
+        <button id="removeData">Remove data from localStorage</button>
+    </div>
+    <script>
+        const studentData = {
+            firstName: "Hassan",
+            lastName: "Owais",
+            age: 20,
+            gender: "Male",
+            grade: "A",
+            courses: ["Math", "Science", "English"],
+            address: {
+                street: "123 Main St",
+                city: "Karachi",
+                state: "CA",
+                zip: "12345"
+            }
+        }
+
+        let addData = document.getElementById("addData");
+
+        addData.addEventListener("click", () => {
+            localStorage.setItem("objectData", studentData)
+        })
+
+        let getData = document.getElementById("getData");
+
+        getData.addEventListener("click", () => {
+            localStorage.getItem("objectData")
+        })
+
+        let removeData = document.getElementById("removeData");
+
+        removeData.addEventListener("click", () => {
+            localStorage.removeItem("objectData")
+        })
+
+
+    </script>
+</body>
+
+</html>
