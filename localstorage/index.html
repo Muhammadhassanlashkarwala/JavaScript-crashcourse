@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clearify LocalStorage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div>
+    <div class="main">
         <button id="addData">Add data to localStorage</button>
         <button id="getData">Get data from localStorage</button>
         <button id="removeData">Remove data from localStorage</button>
@@ -27,21 +27,24 @@
                 state: "CA",
                 zip: "12345"
             }
-        }
+        }  
 
         let addData = document.getElementById("addData");
+        let getData = document.getElementById("getData");
+        let removeData = document.getElementById("removeData");
 
         addData.addEventListener("click", () => {
-            localStorage.setItem("objectData", studentData)
+            localStorage.setItem("objectData", JSON.stringify(studentData))
         })
-
-        let getData = document.getElementById("getData");
 
         getData.addEventListener("click", () => {
-            localStorage.getItem("objectData")
+            // let checkType = localStorage.getItem("objectData")
+            // console.log(typeof checkType);  
+            
+           let checkType = JSON.parse(localStorage.getItem("objectData"));
+           console.log(checkType);
+           
         })
-
-        let removeData = document.getElementById("removeData");
 
         removeData.addEventListener("click", () => {
             localStorage.removeItem("objectData")
@@ -50,5 +53,4 @@
 
     </script>
 </body>
-
-</html>
+</html>      
