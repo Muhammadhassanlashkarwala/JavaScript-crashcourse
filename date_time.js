@@ -193,3 +193,42 @@
 // const dateString = "2025-11-13T17:30:00Z";
 // const parsedDate = Date.parse(dateString);
 // console.log(parsedDate);   //Example output: 17032540690883 (milliseconds)
+
+//* ============
+//*  BONUS  :)
+//* ============
+
+// let newDate = new Date();
+// console.log(Date.now());
+// console.log(newDate.getTime());
+
+//? Date.now() is a static method of the date object.
+//? Use Date.now() if you want the timestamp right this second.
+//? It returns the current timestamp (number of milliseconds) representing the current time moment.
+//? Use newDate.getTime() if you have an  existing Date object from elsewhere and want its timestamp.
+
+//! ===================
+//! Interview Questions
+//! ===================
+
+//! 1: Write a function to add a specified number of days to a given date.
+
+const addDaysToDate = (date, extraDate) =>{
+    let updateDate = date.setDate(date.getDate() + extraDate);
+    updateDate = new Date(updateDate);
+    return updateDate;
+};
+
+//* Example usage:
+const date = new Date("2025-11-16");
+const newDate = addDaysToDate(date, 10);
+// console.log(newDate);   // timezone also added 
+console.log(newDate.toLocaleDateString());
+
+//! 2: Write a function to calculate the difference in days between two given dates.
+
+//* Example usage:
+// const date1 = new Date("2025-11-16");
+// const date2 = new Date("2025-12-01");
+// console.log(getDaysDifference(date1, date2));  //output: 11 (difference in days).  
+
