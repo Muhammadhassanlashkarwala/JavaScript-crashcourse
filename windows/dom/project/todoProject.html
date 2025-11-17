@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todoProject</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Todo List</h1>
+   <br>
+    <form>
+        <div>
+        <input type="text" id="inputValue">
+        <button class="btn">Add Todo</button>
+        </div>
+       <section class="todo-lists-elem"></section>
+    </form>
+    
+    <script>
+        const inputElem = document.getElementById("inputValue");
+        const btn = document.querySelector(".btn");
+        const mainTodoElem = document.querySelector(".todo-lists-elem");
+        const STORAGE_KEY = "todos_v1";
+
+        const addTodoList = (e) =>{
+            e.preventDefault();
+
+            const todoText = inputElem.value.trim();
+            if(todoText === "") return;
+
+            const div = document.createElement("div");
+            div.classList.add("main-todo-div");
+            div.innerHTML = `<li>${todoText}</li> <button class="deleteBtn">Delete</button>`;
+            mainTodoElem.append(div);
+
+            const oldTodos = getTodosFromStorage();
+            oldTodos.push(todoText);
+            saveTodosToStorage(oldTodos)
+
+            inputElem.value = "";
+        }
+         const getTodosFromStorage = ()=>{     
+            const todosJSON = localStorage.getItem(STORAGE_KEY) 
+            if(!todosJSON) return [];
+            try{
+              return JSON.parse(todosJSON);   
+            }
+            catch(err){
+                console.log("Showing error", err);
+                return [];
+            }
+        };
+        const saveTodosToStorage = (todos)=>{
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(todos))
+        }
+        btn.addEventListener("click", (e)=>{addTodoList(e)} );
+    </script>
+</body>
+</html>
+
+<!-- 2:20 -->
