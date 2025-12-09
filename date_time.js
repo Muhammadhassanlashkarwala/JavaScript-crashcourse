@@ -123,7 +123,6 @@
 // date.setDate(18);
 // console.log(date); // Date object with the day of the month set to 15.
 
-
 //* ================================================
 //* JavaScript Get Time Methods / Getting Components:
 //* ================================================
@@ -231,4 +230,3 @@ console.log(newDate.toLocaleDateString());
 // const date1 = new Date("2025-11-16");
 // const date2 = new Date("2025-12-01");
 // console.log(getDaysDifference(date1, date2));  //output: 11 (difference in days).  
-
