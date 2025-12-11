@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background: rgb(124, 126, 126);
+        width: 100%;
+        height: 100vh;
+        padding: 20em 35em;
+        font-family: sans-serif;
+      }
+      .timeOption {
+        position: absolute;
+        padding-top: 47px;
+      }
+      .timeOption i {
+        color: white;
+        margin-bottom: 5px;
+        font-size: 0.5em;
+        margin-left: 20px;
+      }
+      .main-div {
+        width: 27em;
+        height: 9em;
+        background: black;
+        padding-top: 2.5em;
+        border-radius: 0.5em;
+        border: 1px solid yellow;
+      }
+      .main-div p {
+        font-size: 4em;
+        padding-left: 1em;
+        letter-spacing: 0.2em;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="clockHolder">
+        <div class="timeHolder">
+          <div class="timeOption">
+            <i class="fas fa-clock" data-title="Time"></i><br />
+            <i class="fas fa-stopwatch" data-title="StopWatch"></i><br />
+            <i class="far fa-clock" data-title="CountDown"></i><br />
+          </div>
+          <div class="main-div">
+            <p id="clock"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let currentTime = () => {
+        let curTime = new Date().toLocaleTimeString();
+        document.getElementById("clock").innerText = curTime;
+      };
+      currentTime();
+
+      const intervalId = setInterval(() => {
+        currentTime();
+      }, 1000);
+
+      //   When you stop the watch so you can used clearInterval !
+
+      //   setTimeout(()=> {
+      //   clearInterval(intervalId)
+      //   }, 10000);
+    </script>
+  </body>
+</html>
