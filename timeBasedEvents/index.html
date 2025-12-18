@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Watch Project</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -68,24 +68,21 @@
     </div>
 
     <script>
-      let currentTime = () => {
-        let curTime = new Date().toLocaleTimeString();
-        document.getElementById("clock").innerText = curTime;
+      let curTime = () =>{
+        let currentTime = new Date().toLocaleTimeString();
+        document.getElementById("clock").textContent = currentTime;
       };
-      currentTime();
+      curTime();
+      
+      const intervalId = setInterval(() =>{
+         curTime();
+      },1000)
 
-      const intervalId = setInterval(() => {
-        currentTime();
-      }, 1000);
-
-      //   When you stop the watch so you can used clearInterval !
+       //   When you stop the watch so you can used clearInterval !
 
       //   setTimeout(()=> {
       //   clearInterval(intervalId)
       //   }, 10000);
     </script>
-
-
-
   </body>
 </html>
