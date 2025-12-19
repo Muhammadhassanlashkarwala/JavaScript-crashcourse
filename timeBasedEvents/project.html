@@ -1,128 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Count Project</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            width: 100%;
-            height: 100vh;
-            background: grey;
-            display: flex;
-            justify-content: center;
-            font-family: sans-serif;
-            align-items: center;
-        }
-        section{
-            background: #000;
-            color: white;
-            padding: 1.2rem;
-            width: 20%;
-            height: 60vh;
-        }
-        section p{
-            font-size: 5rem;
-            text-align: center;
-            color: rgb(159, 236, 236);
-        }
-        .btns{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        .start-btn{
-            text-align: center;
-            height: 30px;
-            background: white;
-            color: black;
-            margin: 1rem;
-            border-radius: 20px;
-            padding-top: 0.3rem;
-        }
-        .reset-btn{
-            text-align: center;
-            height: 30px;
-            background: white;
-            color: black;
-            margin: 1rem;
-            border-radius: 20px;
-            padding-top: 0.3rem;
-        }
-        .stop-btn{
-            text-align: center;
-            height: 30px;
-            background: white;
-            color: black;
-            margin: 1rem;
-            border-radius: 20px;
-            padding-top: 0.3rem;
-        }
-        .clear-btn{
-            text-align: center;
-            height: 30px;
-            background: white;
-            color: black;
-            padding-top: 0.3rem;
-            margin: 1rem;
-            border-radius: 20px; 
-        }
-         .time-btn{
-            text-align: center;
-            height: 30px;
-            background: white;
-            color: black;
-            margin: 1rem;
-            border-radius: 20px;
-            padding-top: 0.3rem;
-        }
-        .time-btn:hover{
-            cursor: pointer;
-            border: 1px solid rgb(159, 236, 236);
-            color: rgb(159, 236, 236);
-            background: #000;
-        }
-        .clear-btn:hover{
-            cursor: pointer;
-            border: 1px solid rgb(159, 236, 236);
-            color: rgb(159, 236, 236);
-            background: #000;
-        }
-        .stop-btn:hover{
-            cursor: pointer;
-            border: 1px solid rgb(159, 236, 236);
-            color: rgb(159, 236, 236);
-            background: #000;
-        }
-        .reset-btn:hover{
-            cursor: pointer;
-            border: 1px solid rgb(159, 236, 236);
-            color: rgb(159, 236, 236);
-            background: #000;
-        }
-        .start-btn:hover{
-            cursor: pointer;
-            border: 1px solid rgb(159, 236, 236);
-            color: rgb(159, 236, 236);
-            background: #000;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background: grey;
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+        align-items: center;
+      }
+      section {
+        background: #000;
+        color: white;
+        padding: 1.2rem;
+        width: 20%;
+        border-radius: 15px;
+        height: 60vh;
+      }
+      section p {
+        font-size: 5rem;
+        text-align: center;
+        color: rgb(159, 236, 236);
+      }
+      .btns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .start-btn {
+        text-align: center;
+        height: 30px;
+        background: white;
+        color: black;
+        margin: 1rem;
+        border-radius: 20px;
+        padding-top: 0.3rem;
+      }
+      .reset-btn {
+        text-align: center;
+        height: 30px;
+        background: white;
+        color: black;
+        margin: 1rem;
+        border-radius: 20px;
+        padding-top: 0.3rem;
+      }
+      .stop-btn {
+        text-align: center;
+        height: 30px;
+        background: white;
+        color: black;
+        margin: 1rem;
+        border-radius: 20px;
+        padding-top: 0.3rem;
+      }
+      .clear-btn {
+        text-align: center;
+        height: 30px;
+        background: white;
+        color: black;
+        padding-top: 0.3rem;
+        margin: 1rem;
+        border-radius: 20px;
+      }
+      .time-btn {
+        text-align: center;
+        height: 30px;
+        background: white;
+        color: black;
+        margin: 1rem;
+        border-radius: 20px;
+        padding-top: 0.3rem;
+      }
+      .time-btn:hover {
+        cursor: pointer;
+        border: 1px solid rgb(159, 236, 236);
+        color: rgb(159, 236, 236);
+        background: #000;
+      }
+      .clear-btn:hover {
+        cursor: pointer;
+        border: 1px solid rgb(159, 236, 236);
+        color: rgb(159, 236, 236);
+        background: #000;
+      }
+      .stop-btn:hover {
+        cursor: pointer;
+        border: 1px solid rgb(159, 236, 236);
+        color: rgb(159, 236, 236);
+        background: #000;
+      }
+      .reset-btn:hover {
+        cursor: pointer;
+        border: 1px solid rgb(159, 236, 236);
+        color: rgb(159, 236, 236);
+        background: #000;
+      }
+      .start-btn:hover {
+        cursor: pointer;
+        border: 1px solid rgb(159, 236, 236);
+        color: rgb(159, 236, 236);
+        background: #000;
+      }
+      .resetValue p{
+        font-size: 18px;
+        color: red;
+        padding-top: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <section>
-        <p id="countDown">0</p>
-        <div class="btns">
-            <div class="start-btn">Start</div>
-            <div class="reset-btn">Reset</div>
-            <div class="stop-btn">Stop</div>
-            <div class="time-btn">getTime</div>
-            <div class="clear-btn">clearTime</div>
-        </div>
-        <div class="resetValue"></div>
+      <p id="countDown">0</p>
+      <div class="btns">
+        <div class="start-btn">Start</div>
+        <div class="reset-btn">Reset</div>
+        <div class="stop-btn">Stop</div>
+        <div class="time-btn">getTime</div>
+        <div class="clear-btn">clearTime</div>
+      </div>
+      <div class="resetValue"></div>
     </section>
-</body>
+
+    <script>
+      let countDownElement = document.getElementById("countDown");
+      let resetValueElement = document.querySelector(".resetValue");
+      let startCount = 0;
+      let intervalId;
+      let startBtn = document.querySelector(".start-btn");
+      let resetBtn = document.querySelector(".reset-btn");
+      let clearBtn = document.querySelector(".clear-btn");
+      let stopBtn = document.querySelector(".stop-btn");
+      let timeBtn = document.querySelector(".time-btn");
+
+      const startTimer = () => {
+         intervalId = setInterval(() => {
+          countDownElement.innerText = startCount++;
+        }, 1000);
+      };
+
+       const stopTimer = () =>{
+         clearInterval(intervalId)
+       }
+
+       const resetTimer = () =>{
+        let startCount = 0;
+        countDownElement.innerText = startCount;
+        clearInterval(intervalId)
+       }
+
+       const showStopTimer = () => {
+        let newPara = document.createElement("p");
+        newPara.innerText = `The stop time is ${startCount - 1}`
+        resetValueElement.append(newPara);
+       }
+ 
+       const clearValueTimer = () =>{
+        resetValueElement.innerText = "";
+       }
+       
+
+      startBtn.addEventListener("click", startTimer);
+      stopBtn.addEventListener("click", stopTimer);
+      resetBtn.addEventListener("click", resetTimer);
+      timeBtn.addEventListener("click", showStopTimer);
+      clearBtn.addEventListener("click", clearValueTimer);
+    </script>
+  </body>
 </html>
